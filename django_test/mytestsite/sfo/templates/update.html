@@ -1,0 +1,30 @@
+<h1>Update sfo</h1>
+
+<form action="updaterecord/{{ mysfo.id }}" method="post">
+{% csrf_token %}
+Name:<br>
+<input name="name" value="{{ mysfo.name }}">
+<br><br>
+Modul:<br>
+<input name="modul" value="{{ mysfo.modul }}">
+<br><br>
+Gruppe:<br>
+<input name="gruppe" value="{{ mysfo.gruppe }}">
+<br><br>
+Mandag:<br>
+<input name="mandag" value="{{ mysfo.mandag }}">
+<br><br>
+Tirsdag:<br>
+<input name="tirsdag" value="{{ mysfo.tirsdag }}">
+<br><br>
+Onsdag:<br>
+<input name="onsdag" value="{{ mysfo.onsdag }}">
+<br><br>
+Torsdag:<br>
+<input name="torsdag" value="{{ mysfo.torsdag }}">
+<br><br>
+Fredag:<br>
+<input name="fredag" value="{{ mysfo.fredag }}">
+<br><br>
+<input type="submit" value="Submit">
+</form>
